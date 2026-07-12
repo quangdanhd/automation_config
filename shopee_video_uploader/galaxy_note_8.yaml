@@ -1,0 +1,165 @@
+version: 1
+
+steps:
+  # click account
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tôi"
+  # swipe
+  - sleep:
+      min: 8
+      max: 10
+  - swipe:
+      from:
+        x: 500
+        y: 1800
+      to:
+        x: 500
+        y: 700
+  # click affiliate
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Shopee Tiếp Thị Liên Kết"
+      timeout: 3000
+      optional: true
+  # swipe again
+  - swipe:
+      from:
+        x: 500
+        y: 1800
+      to:
+        x: 500
+        y: 1500
+  # click affiliate again
+  - tapText:
+      text: "Shopee Tiếp Thị Liên Kết"
+      timeout: 3000
+      optional: true
+  # click account
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tài khoản"
+  # video profile
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Hồ sơ Shopee Video"
+  # push file
+  - pushFile
+  # click upload video button
+  - tapText:
+      text: "Đăng video"
+  # click library button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Thư viện"
+  # select video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 206
+      y: 564
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click describe ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 468
+      y: 256
+  # insert describe
+  - sleep:
+      min: 2
+      max: 3
+  - inputTitle
+  # click agree ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 1007
+      y: 124
+  # click add product ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 537
+      y: 785
+  # click add product ===> screenshoot <=====?
+  #  - sleep:
+  #      min: 2
+  #      max: 3
+  #  - tap:
+  #      x: 537
+  #      y: 685
+  # click input link icon ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 1007
+      y: 121
+  # insert link
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Only URLs for Shopee products are supported. Please input up to 50 links in different lines."
+  # insert link
+  - inputLink
+  # insert
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Nhập"
+  # select product ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 50
+      y: 1217
+  # click add button ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 684
+      y: 1932
+  # click AI-generated video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 971
+      y: 1522
+  # click publish button ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 500
+      y: 2040
