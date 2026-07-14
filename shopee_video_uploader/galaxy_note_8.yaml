@@ -1,5 +1,5 @@
 name: "Galaxy Note 8"
-version: 1.0.1
+version: 1.0.2
 
 steps:
   # click account
@@ -134,9 +134,9 @@ steps:
       x: 971
       y: 1522
   # click publish button ===> screenshoot <=====
-  - sleep:
-      min: 2
-      max: 3
-  - tap:
-      x: 500
-      y: 2040
+#  - sleep:
+#      min: 2
+#      max: 3
+#  - tap:
+#      x: 500
+#      y: 2040
