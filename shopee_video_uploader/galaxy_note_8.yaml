@@ -1,5 +1,5 @@
 name: "Galaxy Note 8"
-version: 1.0.3
+version: 1.0.4
 
 steps:
   # click account
@@ -82,19 +82,19 @@ steps:
       x: 1007
       y: 124
   # click add product ===> screenshoot <=====
-  - sleep:
-      min: 2
-      max: 3
-  - tap:
-      x: 537
-      y: 785
-  # click add product ===> screenshoot <=====?
   #  - sleep:
   #      min: 2
   #      max: 3
   #  - tap:
   #      x: 537
-  #      y: 685
+  #      y: 785
+  # click add product ===> screenshoot <=====?
+  - sleep:
+      min: 2
+      max: 3
+  - tap:
+      x: 537
+      y: 685
   # click input link icon ===> screenshoot <=====
   - sleep:
       min: 2
