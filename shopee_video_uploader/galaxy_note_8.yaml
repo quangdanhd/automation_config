@@ -1,5 +1,5 @@
 name: "Galaxy Note 8"
-version: 1.0.2
+version: 1.0.3
 
 steps:
   # click account
@@ -8,6 +8,10 @@ steps:
       max: 3
   - tapText:
       text: "Tôi"
+  # click
+  - sleep:
+      min: 6
+      max: 8
   - swipeTapText:
       text: "Shopee Tiếp Thị Liên Kết"
       from:
