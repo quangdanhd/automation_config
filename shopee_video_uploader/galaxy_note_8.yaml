@@ -81,13 +81,6 @@ steps:
   - tap:
       x: 1007
       y: 124
-  # click add product ===> screenshoot <=====
-  #  - sleep:
-  #      min: 2
-  #      max: 3
-  #  - tap:
-  #      x: 537
-  #      y: 785
   # click add product ===> screenshoot <=====?
   - sleep:
       min: 2
@@ -109,6 +102,9 @@ steps:
   - tapText:
       text: "Only URLs for Shopee products are supported. Please input up to 50 links in different lines."
   # insert link
+  - sleep:
+      min: 2
+      max: 3
   - inputLink
   # insert
   - sleep:
