@@ -8,38 +8,14 @@ steps:
       max: 3
   - tapText:
       text: "Tôi"
-  # swipe
-  - sleep:
-      min: 8
-      max: 10
-  - swipe:
+  - swipeTapText:
+      text: "Shopee Tiếp Thị Liên Kết"
       from:
         x: 500
         y: 1800
       to:
         x: 500
         y: 700
-  # click affiliate
-  - sleep:
-      min: 2
-      max: 3
-  - tapText:
-      text: "Shopee Tiếp Thị Liên Kết"
-      timeout: 3000
-      optional: true
-  # swipe again
-  - swipe:
-      from:
-        x: 500
-        y: 1800
-      to:
-        x: 500
-        y: 1500
-  # click affiliate again
-  - tapText:
-      text: "Shopee Tiếp Thị Liên Kết"
-      timeout: 3000
-      optional: true
   # click account
   - sleep:
       min: 2
