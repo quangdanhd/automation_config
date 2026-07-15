@@ -10,6 +10,11 @@ COLOUR_END=\033[0m
 .PHONY: help
 help: ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "Usage:\n  make \033[36m<target>\033[0m\n"} /^[a-zA-Z_0-9-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
+##@ Development
+push: ## git push
+	git add .
+	git commit -m "update"
+	git push origin HEAD
 ##@ Format
 c: ## prettier check
 	prettier --check .
