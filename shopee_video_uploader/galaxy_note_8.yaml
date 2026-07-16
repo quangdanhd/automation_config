@@ -1,5 +1,5 @@
 name: "Galaxy Note 8"
-version: 1.0.8
+version: 1.0.9
 
 steps:
   # click account
@@ -92,9 +92,11 @@ steps:
   - sleep:
       min: 2
       max: 3
-  - tap:
-      x: 1007
-      y: 121
+  - tapImageAfterGroupWithText:
+      text: "Thêm sản phẩm"
+  #  - tap:
+  #      x: 1007
+  #      y: 121
   # insert link
   - sleep:
       min: 2
@@ -112,20 +114,18 @@ steps:
       max: 3
   - tapText:
       text: "Nhập"
-  # select product ===> screenshoot <=====
+  # select all
   - sleep:
       min: 2
       max: 3
-  - tap:
-      x: 50
-      y: 1217
-  # click add button ===> screenshoot <=====
+  - tapText:
+      text: "Chọn tất cả"
+  # click add products
   - sleep:
       min: 2
       max: 3
-  - tap:
-      x: 684
-      y: 1932
+  - tapText:
+      regex: '^Thêm\(\d+\)$'
   # click AI-generated video ===> screenshoot <=====
   - sleep:
       min: 2
