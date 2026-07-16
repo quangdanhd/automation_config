@@ -105,7 +105,7 @@ steps:
   - sleep:
       min: 2
       max: 3
-  - inputLink
+  - inputLinks
   # insert
   - sleep:
       min: 2
