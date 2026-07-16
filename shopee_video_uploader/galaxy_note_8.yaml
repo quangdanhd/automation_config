@@ -1,5 +1,5 @@
 name: "Galaxy Note 8"
-version: 1.0.6
+version: 1.0.7
 
 steps:
   # click account
@@ -19,7 +19,7 @@ steps:
         y: 1800
       to:
         x: 500
-        y: 700
+        y: 1000
   # click account
   - sleep:
       min: 2
