@@ -1,5 +1,5 @@
 name: "Galaxy Note 8"
-version: 1.0.9
+version: 1.0.10
 
 steps:
   # click account
@@ -47,9 +47,11 @@ steps:
   - sleep:
       min: 2
       max: 3
-  - tap:
-      x: 206
-      y: 564
+  - tapResourceId:
+      resourceId: "com.shopee.vn:id/tv_duration"
+  #  - tap:
+  #      x: 206
+  #      y: 564
   # click next button
   - sleep:
       min: 2
