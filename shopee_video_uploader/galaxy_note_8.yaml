@@ -1,13 +1,16 @@
 name: "Galaxy Note 8"
-version: 1.0.10
+version: 1.0.11
 
 steps:
   # click account
   - sleep:
       min: 2
       max: 3
-  - tapText:
-      text: "Tôi"
+  - tap:
+      x: 972
+      y: 2073
+  #  - tapText:
+  #      text: "Tôi"
   # click
   - sleep:
       min: 6
