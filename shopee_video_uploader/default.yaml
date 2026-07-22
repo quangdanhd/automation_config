@@ -141,8 +141,8 @@ steps:
       y: 0.91892
   # click account
   - sleep:
-      min: 3
-      max: 5
+      min: 5
+      max: 7
   - tapRatio:
       x: 0.9
       y: 0.93378
