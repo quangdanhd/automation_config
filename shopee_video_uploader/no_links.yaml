@@ -1,0 +1,99 @@
+name: "---No Links"
+version: 1.0.0
+
+steps:
+  # click account
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.9
+      y: 0.93378
+  #  - tapText:
+  #      text: "Tôi"
+  # click
+  - sleep:
+      min: 6
+      max: 8
+  - swipeTapText:
+      text: "Shopee Tiếp Thị Liên Kết"
+      from:
+        x: 500
+        y: 1800
+      to:
+        x: 500
+        y: 1000
+  # click account
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tài khoản"
+  # video profile
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Hồ sơ Shopee Video"
+  # push file
+  - pushFile
+  # click upload video button
+  - tapText:
+      text: "Đăng video"
+  # click library button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Thư viện"
+  # select video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapResourceId:
+      resourceId: "com.shopee.vn:id/tv_duration"
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click describe ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.43333
+      y: 0.11532
+  # insert describe
+  - sleep:
+      min: 2
+      max: 3
+  - inputTitle
+  # click agree ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.93241
+      y: 0.05586
+  # click AI-generated video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.90556
+      y: 0.50225
+  # click publish button ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.46296
+      y: 0.91892
