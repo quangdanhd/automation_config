@@ -1,5 +1,5 @@
 name: "---No Links"
-version: 1.0.0
+version: 1.0.1
 
 steps:
   # click account
@@ -9,8 +9,6 @@ steps:
   - tapRatio:
       x: 0.9
       y: 0.93378
-  #  - tapText:
-  #      text: "Tôi"
   # click
   - sleep:
       min: 6
@@ -97,3 +95,10 @@ steps:
   - tapRatio:
       x: 0.46296
       y: 0.91892
+  # click account
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.9
+      y: 0.93378
