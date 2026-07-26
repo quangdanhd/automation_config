@@ -1,0 +1,129 @@
+name: "Default v2"
+version: 1.0.0
+
+steps:
+  # click Live & Video
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.5
+      y: 0.93378
+  # click account (top left)
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.05648
+      y: 0.0545
+  # push file
+  - pushFile
+  # click upload video button
+  - tapText:
+      text: "Đăng video"
+  # click library button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Thư viện"
+  # select video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapResourceId:
+      resourceId: "com.shopee.vn:id/tv_duration"
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click describe ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.43333
+      y: 0.11532
+  # insert describe
+  - sleep:
+      min: 2
+      max: 3
+  - inputTitle
+  # click agree ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.93241
+      y: 0.05586
+  # click add product ===> screenshoot <=====?
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.49722
+      y: 0.30856
+  # click input link icon ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapImageAfterGroupWithText:
+      text: "Thêm sản phẩm"
+  # insert link
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Only URLs for Shopee products are supported. Please input up to 50 links in different lines."
+  # insert link
+  - sleep:
+      min: 2
+      max: 3
+  - inputLinks
+  # insert
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Nhập"
+  # select all
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Chọn tất cả"
+  # click add products
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      regex: '^Thêm\(\d+\)$'
+  # click AI-generated video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.89907
+      y: 0.68559
+  # click publish button ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.46296
+      y: 0.91892
+  # click account (top left)
+  - sleep:
+      min: 5
+      max: 7
+  - tapRatio:
+      x: 0.05648
+      y: 0.0545
