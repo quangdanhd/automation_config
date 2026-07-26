@@ -1,5 +1,5 @@
 name: "Default"
-version: 1.0.1
+version: 1.0.2
 
 steps:
   # click account
@@ -18,11 +18,11 @@ steps:
   - swipeTapText:
       text: "Shopee Tiếp Thị Liên Kết"
       from:
-        x: 500
-        y: 1800
+        x: 100
+        y: 800
       to:
-        x: 500
-        y: 1000
+        x: 100
+        y: 100
   # click account
   - sleep:
       min: 2
