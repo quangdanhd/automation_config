@@ -1,0 +1,75 @@
+name: "---No Links v3"
+version: 1.0.0
+
+steps:
+  # open video profile link
+  - openDeepLink
+  # push file
+  - pushFile
+  # click upload video button
+  - tapText:
+      text: "Đăng video"
+  # click library button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Thư viện"
+  # select video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapResourceId:
+      resourceId: "com.shopee.vn:id/tv_duration"
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click next button
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Tiếp theo"
+  # click describe ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.43333
+      y: 0.11532
+  # insert describe
+  - sleep:
+      min: 2
+      max: 3
+  - inputTitle
+  # click agree ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.93241
+      y: 0.05586
+  # click AI-generated video ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.90556
+      y: 0.50225
+  # click publish button ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.46296
+      y: 0.91892
+    # click account (top left)
+  - sleep:
+      min: 5
+      max: 7
+  - tapRatio:
+      x: 0.05648
+      y: 0.0545
