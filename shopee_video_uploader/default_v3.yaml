@@ -1,38 +1,15 @@
-name: "---No Links"
-version: 1.0.1
+name: "Default v3"
+version: 1.0.0
 
 steps:
-  # click account
+  # open video profile link
   - sleep:
       min: 2
       max: 3
-  - tapRatio:
-      x: 0.9
-      y: 0.93378
-  # click
+  - openDeepLink
   - sleep:
-      min: 6
-      max: 8
-  - swipeTapText:
-      text: "Shopee Tiếp Thị Liên Kết"
-      from:
-        x: 500
-        y: 1800
-      to:
-        x: 500
-        y: 1000
-  # click account
-  - sleep:
-      min: 2
-      max: 3
-  - tapText:
-      text: "Tài khoản"
-  # video profile
-  - sleep:
-      min: 2
-      max: 3
-  - tapText:
-      text: "Hồ sơ Shopee Video"
+      min: 5
+      max: 6
   # push file
   - pushFile
   # click upload video button
@@ -81,13 +58,48 @@ steps:
   - tapRatio:
       x: 0.93241
       y: 0.05586
-  # click AI-generated video ===> screenshoot <=====
+  # click add product ===> screenshoot <=====?
   - sleep:
       min: 2
       max: 3
   - tapRatio:
-      x: 0.90556
-      y: 0.50225
+      x: 0.49722
+      y: 0.30856
+  # click input link icon ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapImageAfterGroupWithText:
+      text: "Thêm sản phẩm"
+  # insert link
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Only URLs for Shopee products are supported. Please input up to 50 links in different lines."
+  # insert link
+  - sleep:
+      min: 2
+      max: 3
+  - inputLinks
+  # insert
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Nhập"
+  # select all
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Chọn tất cả"
+  # click add products
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      regex: '^Thêm\(\d+\)$'
   # click publish button ===> screenshoot <=====
   - sleep:
       min: 2

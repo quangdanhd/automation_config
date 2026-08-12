@@ -1,21 +1,15 @@
-name: "---No Links v2"
+name: "Add Music 🎸 v3"
 version: 1.0.0
 
 steps:
-  # click Live & Video
+  # open video profile link
   - sleep:
       min: 2
       max: 3
-  - tapRatio:
-      x: 0.5
-      y: 0.93378
-  # click account (top left)
+  - openDeepLink
   - sleep:
-      min: 2
-      max: 3
-  - tapRatio:
-      x: 0.05648
-      y: 0.0545
+      min: 5
+      max: 6
   # push file
   - pushFile
   # click upload video button
@@ -39,6 +33,11 @@ steps:
       max: 3
   - tapText:
       text: "Tiếp theo"
+  # add music
+  - sleep:
+      min: 2
+      max: 3
+  - addMusic
   # click next button
   - sleep:
       min: 2
@@ -64,13 +63,48 @@ steps:
   - tapRatio:
       x: 0.93241
       y: 0.05586
-  # click AI-generated video ===> screenshoot <=====
+  # click add product ===> screenshoot <=====?
   - sleep:
       min: 2
       max: 3
   - tapRatio:
-      x: 0.90556
-      y: 0.50225
+      x: 0.49722
+      y: 0.30856
+  # click input link icon ===> screenshoot <=====
+  - sleep:
+      min: 2
+      max: 3
+  - tapImageAfterGroupWithText:
+      text: "Thêm sản phẩm"
+  # insert link
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Only URLs for Shopee products are supported. Please input up to 50 links in different lines."
+  # insert link
+  - sleep:
+      min: 2
+      max: 3
+  - inputLinks
+  # insert
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Nhập"
+  # select all
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      text: "Chọn tất cả"
+  # click add products
+  - sleep:
+      min: 2
+      max: 3
+  - tapText:
+      regex: '^Thêm\(\d+\)$'
   # click publish button ===> screenshoot <=====
   - sleep:
       min: 2
@@ -78,10 +112,10 @@ steps:
   - tapRatio:
       x: 0.46296
       y: 0.91892
-    # click account (top left)
+  # click account
   - sleep:
       min: 5
       max: 7
   - tapRatio:
-      x: 0.05648
-      y: 0.0545
+      x: 0.9
+      y: 0.93378

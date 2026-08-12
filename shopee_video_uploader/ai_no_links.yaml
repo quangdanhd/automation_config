@@ -1,5 +1,5 @@
-name: "Default, No AI"
-version: 1.0.0
+name: "AI, ---No Links"
+version: 1.0.1
 
 steps:
   # click account
@@ -9,8 +9,6 @@ steps:
   - tapRatio:
       x: 0.9
       y: 0.93378
-  #  - tapText:
-  #      text: "Tôi"
   # click
   - sleep:
       min: 6
@@ -18,11 +16,11 @@ steps:
   - swipeTapText:
       text: "Shopee Tiếp Thị Liên Kết"
       from:
-        x: 100
-        y: 800
+        x: 500
+        y: 1800
       to:
-        x: 100
-        y: 100
+        x: 500
+        y: 1000
   # click account
   - sleep:
       min: 2
@@ -83,48 +81,13 @@ steps:
   - tapRatio:
       x: 0.93241
       y: 0.05586
-  # click add product ===> screenshoot <=====?
+  # click AI-generated video ===> screenshoot <=====
   - sleep:
       min: 2
       max: 3
   - tapRatio:
-      x: 0.49722
-      y: 0.30856
-  # click input link icon ===> screenshoot <=====
-  - sleep:
-      min: 2
-      max: 3
-  - tapImageAfterGroupWithText:
-      text: "Thêm sản phẩm"
-  # insert link
-  - sleep:
-      min: 2
-      max: 3
-  - tapText:
-      text: "Only URLs for Shopee products are supported. Please input up to 50 links in different lines."
-  # insert link
-  - sleep:
-      min: 2
-      max: 3
-  - inputLinks
-  # insert
-  - sleep:
-      min: 2
-      max: 3
-  - tapText:
-      text: "Nhập"
-  # select all
-  - sleep:
-      min: 2
-      max: 3
-  - tapText:
-      text: "Chọn tất cả"
-  # click add products
-  - sleep:
-      min: 2
-      max: 3
-  - tapText:
-      regex: '^Thêm\(\d+\)$'
+      x: 0.90556
+      y: 0.50225
   # click publish button ===> screenshoot <=====
   - sleep:
       min: 2

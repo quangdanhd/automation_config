@@ -1,15 +1,21 @@
-name: "---No Links v3"
-version: 1.0.2
+name: "AI, ---No Links v2"
+version: 1.0.0
 
 steps:
-  # open video profile link
+  # click Live & Video
   - sleep:
       min: 2
       max: 3
-  - openDeepLink
+  - tapRatio:
+      x: 0.5
+      y: 0.93378
+  # click account (top left)
   - sleep:
-      min: 5
-      max: 6
+      min: 2
+      max: 3
+  - tapRatio:
+      x: 0.05648
+      y: 0.0545
   # push file
   - pushFile
   # click upload video button
