@@ -72,7 +72,7 @@ steps:
   - tapRatio:
       x: 0.46296
       y: 0.91892
-    # click account (top left)
+  # click account (top left)
   - sleep:
       min: 5
       max: 7

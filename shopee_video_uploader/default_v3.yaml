@@ -107,10 +107,10 @@ steps:
   - tapRatio:
       x: 0.46296
       y: 0.91892
-  # click account
+  # click account (top left)
   - sleep:
       min: 5
       max: 7
   - tapRatio:
-      x: 0.9
-      y: 0.93378
+      x: 0.05648
+      y: 0.0545
