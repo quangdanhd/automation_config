@@ -100,7 +100,7 @@ steps:
       max: 3
   - tapText:
       regex: '^Thêm\(\d+\)$'
-      optional: true
+      onNotFound: "Link unavailable"
   # click AI-generated video ===> screenshoot <=====
   - sleep:
       min: 2
