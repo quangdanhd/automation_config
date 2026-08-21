@@ -1,5 +1,5 @@
 name: "AI v3"
-version: 1.0.0
+version: 1.0.1
 
 steps:
   # open video profile link
@@ -100,6 +100,7 @@ steps:
       max: 3
   - tapText:
       regex: '^Thêm\(\d+\)$'
+      optional: true
   # click AI-generated video ===> screenshoot <=====
   - sleep:
       min: 2
